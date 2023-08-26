@@ -1,0 +1,72 @@
+{
+  "_AppHead-de9c4383.js": {
+    "file": "assets/AppHead-de9c4383.js",
+    "imports": [
+      "resources/js/app.js",
+      "_index.m-aac3173d.js"
+    ]
+  },
+  "_index.m-aac3173d.js": {
+    "file": "assets/index.m-aac3173d.js",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/Pages/ForgotPassword.vue": {
+    "file": "assets/ForgotPassword-31f8b091.js",
+    "imports": [
+      "resources/js/app.js",
+      "_AppHead-de9c4383.js",
+      "_index.m-aac3173d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/ForgotPassword.vue"
+  },
+  "resources/js/Pages/ResetPassword.vue": {
+    "file": "assets/ResetPassword-c28f0f4f.js",
+    "imports": [
+      "resources/js/app.js",
+      "_AppHead-de9c4383.js",
+      "_index.m-aac3173d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/ResetPassword.vue"
+  },
+  "resources/js/Pages/TheLogin.vue": {
+    "file": "assets/TheLogin-2792db39.js",
+    "imports": [
+      "resources/js/app.js",
+      "_index.m-aac3173d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/TheLogin.vue"
+  },
+  "resources/js/Pages/TheRegister.vue": {
+    "file": "assets/TheRegister-435222e8.js",
+    "imports": [
+      "resources/js/app.js",
+      "_AppHead-de9c4383.js",
+      "_index.m-aac3173d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/TheRegister.vue"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-fc772b4e.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-fc772b4e.css"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/ForgotPassword.vue",
+      "resources/js/Pages/ResetPassword.vue",
+      "resources/js/Pages/TheLogin.vue",
+      "resources/js/Pages/TheRegister.vue"
+    ],
+    "file": "assets/app-ee951fa9.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
