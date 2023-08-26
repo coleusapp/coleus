@@ -23,12 +23,13 @@ COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr
 RUN \
     apk update && \
     apk add --no-cache supervisor nginx && \
-    install-php-extensions bcmath pdo_mysql openswoole
+    install-php-extensions bcmath pdo_mysql openswoole pcntl && \
+    rm /usr/local/bin/install-php-extensions
 
 COPY /deploy/docker/nginx/default.conf /etc/nginx/http.d/default.conf
 COPY /deploy/docker/nginx/nginx.conf /etc/nginx/nginx.conf
 
-COPY /deploy/docker/supervisord.conf /etc/supervisor/supervisord.conf
+COPY /deploy/docker/supervisord.conf /etc/supervisord.conf
 
 COPY --from=composer --chown=www-data:www-data /var/www /var/www
 
@@ -36,8 +37,14 @@ COPY --from=node --chown=www-data:www-data /var/www /var/www
 
 WORKDIR /var/www
 
-RUN cp .env.example .env && chmod -R guo+w storage && chmod -R guo+w bootstrap/cache
+RUN php artisan storage:link \
+    && php artisan vendor:publish --all --no-interaction \
+    && chown -R www-data:www-data /var/www \
+    && find /var/www -type f -exec chmod 664 {} \; \
+    && find /var/www -type d -exec chmod 775 {} \;
+
+USER www-data
 
 EXPOSE 8000
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
