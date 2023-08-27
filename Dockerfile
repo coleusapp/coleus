@@ -26,10 +26,6 @@ RUN \
     install-php-extensions bcmath pdo_mysql openswoole pcntl && \
     rm /usr/local/bin/install-php-extensions
 
-COPY /deploy/docker/nginx/default.conf /etc/nginx/http.d/default.conf
-COPY /deploy/docker/nginx/nginx.conf /etc/nginx/nginx.conf
-
-COPY /deploy/docker/supervisord.conf /etc/supervisord.conf
 
 COPY --from=composer --chown=www-data:www-data /var/www /var/www
 
@@ -37,11 +33,15 @@ COPY --from=node --chown=www-data:www-data /var/www /var/www
 
 WORKDIR /var/www
 
-RUN php artisan storage:link \
-    && php artisan vendor:publish --all --no-interaction \
-    && chown -R www-data:www-data /var/www \
-    && find /var/www -type f -exec chmod 664 {} \; \
-    && find /var/www -type d -exec chmod 775 {} \;
+RUN \
+    cp /var/www/deploy/docker/nginx/default.conf /etc/nginx/http.d/default.conf && \
+    cp /var/www/deploy/docker/nginx/nginx.conf /etc/nginx/nginx.conf && \
+    cp /var/www/deploy/docker/supervisord.conf /etc/supervisord.conf && \
+    php artisan storage:link && \
+    php artisan vendor:publish --all --no-interaction && \
+    chown -R www-data:www-data /var/www && \
+    find /var/www -type f -exec chmod 664 {} \; && \
+    find /var/www -type d -exec chmod 775 {} \;
 
 USER www-data
 
