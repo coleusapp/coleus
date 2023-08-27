@@ -31,3 +31,5 @@ jobs:
           tags: coleus/coleus:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            BUST_COMPOSER_CACHE="$(date)"

@@ -12,6 +12,8 @@ FROM composer:2.5 AS composer
 
 COPY composer.json composer.lock /var/www/
 
+ARG BUST_COMPOSER_CACHE
+
 RUN \
     cd /var/www && \
     composer install --no-interaction --no-progress --no-scripts --no-dev --ignore-platform-reqs
