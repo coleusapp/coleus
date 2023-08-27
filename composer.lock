@@ -67,12 +67,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/account.git",
-                "reference": "d674cb3e86467a75976f3d683e76ae8b7458660b"
+                "reference": "6967d31062d0d36d98d98d4cdf2d528245e2f400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/account/zipball/d674cb3e86467a75976f3d683e76ae8b7458660b",
-                "reference": "d674cb3e86467a75976f3d683e76ae8b7458660b",
+                "url": "https://api.github.com/repos/coleusapp/account/zipball/6967d31062d0d36d98d98d4cdf2d528245e2f400",
+                "reference": "6967d31062d0d36d98d98d4cdf2d528245e2f400",
                 "shasum": ""
             },
             "require": {
@@ -136,7 +136,7 @@
                 "issues": "https://github.com/coleusapp/account/issues",
                 "source": "https://github.com/coleusapp/account/tree/main"
             },
-            "time": "2023-08-26T02:33:39+00:00"
+            "time": "2023-08-27T22:43:11+00:00"
         },
         {
             "name": "coleus/ui",
