@@ -1,63 +1,53 @@
 {
-  "_AppHead-de9c4383.js": {
-    "file": "assets/AppHead-de9c4383.js",
-    "imports": [
-      "resources/js/app.js",
-      "_index.m-aac3173d.js"
-    ]
-  },
-  "_index.m-aac3173d.js": {
-    "file": "assets/index.m-aac3173d.js",
+  "_index.m-65dc1fe2.js": {
+    "file": "assets/index.m-65dc1fe2.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/Pages/ForgotPassword.vue": {
-    "file": "assets/ForgotPassword-31f8b091.js",
+    "file": "assets/ForgotPassword-49cf1d1d.js",
     "imports": [
       "resources/js/app.js",
-      "_AppHead-de9c4383.js",
-      "_index.m-aac3173d.js"
+      "_index.m-65dc1fe2.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/ForgotPassword.vue"
   },
   "resources/js/Pages/ResetPassword.vue": {
-    "file": "assets/ResetPassword-c28f0f4f.js",
+    "file": "assets/ResetPassword-693464dd.js",
     "imports": [
       "resources/js/app.js",
-      "_AppHead-de9c4383.js",
-      "_index.m-aac3173d.js"
+      "_index.m-65dc1fe2.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/ResetPassword.vue"
   },
   "resources/js/Pages/TheLogin.vue": {
-    "file": "assets/TheLogin-2792db39.js",
+    "file": "assets/TheLogin-22cb9e45.js",
     "imports": [
       "resources/js/app.js",
-      "_index.m-aac3173d.js"
+      "_index.m-65dc1fe2.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/TheLogin.vue"
   },
   "resources/js/Pages/TheRegister.vue": {
-    "file": "assets/TheRegister-435222e8.js",
+    "file": "assets/TheRegister-d0c39c3d.js",
     "imports": [
       "resources/js/app.js",
-      "_AppHead-de9c4383.js",
-      "_index.m-aac3173d.js"
+      "_index.m-65dc1fe2.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/Pages/TheRegister.vue"
   },
   "resources/js/app.css": {
-    "file": "assets/app-fc772b4e.css",
+    "file": "assets/app-efc8d1c6.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-fc772b4e.css"
+      "assets/app-efc8d1c6.css"
     ],
     "dynamicImports": [
       "resources/js/Pages/ForgotPassword.vue",
@@ -65,7 +55,7 @@
       "resources/js/Pages/TheLogin.vue",
       "resources/js/Pages/TheRegister.vue"
     ],
-    "file": "assets/app-ee951fa9.js",
+    "file": "assets/app-04b0c30d.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
