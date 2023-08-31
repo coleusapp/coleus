@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     user: www-data
     volumes:
-      - ../../.env:/var/www/.env
+      - ../../.env:/var/www/html/.env
     ports:
       - "80:80"
     depends_on:
