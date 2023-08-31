@@ -23,7 +23,7 @@ services:
       - MARIADB_USER=user
       - MARIADB_PASSWORD=password
     volumes:
-      - /mariadb-data:/var/lib/mysql
+      - ./mariadb-data:/var/lib/mysql
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-u", "user", "-ppassword" ]
       interval: 60s
