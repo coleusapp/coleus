@@ -1,21 +1,21 @@
 FROM node:20-alpine3.18 AS node
 
-COPY . /var/www
+COPY . /var/www/html
 
 RUN \
-    cd var/www && \
+    cd var/www/html && \
     npm ci && \
     npm run build && \
     rm -rf node_modules
 
 FROM composer:2.5 AS composer
 
-COPY composer.json composer.lock /var/www/
+COPY composer.json composer.lock /var/www/html/
 
 ARG BUST_COMPOSER_CACHE
 
 RUN \
-    cd /var/www && \
+    cd /var/www/html && \
     composer install --no-interaction --no-progress --no-scripts --no-dev --ignore-platform-reqs
 
 FROM php:8.2-cli-alpine3.18
@@ -29,21 +29,21 @@ RUN \
     rm /usr/local/bin/install-php-extensions
 
 
-COPY --from=composer --chown=www-data:www-data /var/www /var/www
+COPY --from=composer --chown=www-data:www-data /var/www/html /var/www/html
 
-COPY --from=node --chown=www-data:www-data /var/www /var/www
+COPY --from=node --chown=www-data:www-data /var/www/html /var/www/html
 
-WORKDIR /var/www
+WORKDIR /var/www/html
 
 RUN \
-    cp /var/www/deploy/docker/nginx/default.conf /etc/nginx/http.d/default.conf && \
-    cp /var/www/deploy/docker/nginx/nginx.conf /etc/nginx/nginx.conf && \
-    cp /var/www/deploy/docker/supervisord.conf /etc/supervisord.conf && \
+    cp /var/www/html/deploy/docker/nginx/default.conf /etc/nginx/http.d/default.conf && \
+    cp /var/www/html/deploy/docker/nginx/nginx.conf /etc/nginx/nginx.conf && \
+    cp /var/www/html/deploy/docker/supervisord.conf /etc/supervisord.conf && \
     php artisan storage:link && \
     php artisan vendor:publish --all --no-interaction && \
-    chown -R www-data:www-data /var/www && \
-    find /var/www -type f -exec chmod 664 {} \; && \
-    find /var/www -type d -exec chmod 775 {} \;
+    chown -R www-data:www-data /var/www/html && \
+    find /var/www/html -type f -exec chmod 664 {} \; && \
+    find /var/www/html -type d -exec chmod 775 {} \;
 
 USER www-data
 
