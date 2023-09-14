@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    abort(418);
-});
+Route::get('/desktop', function () {
+    return [
+        'authenticated' => \Illuminate\Support\Facades\Auth::check()
+    ];
+})->middleware('auth');
