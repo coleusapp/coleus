@@ -1,9 +1,0 @@
-/var/www/html/storage/logs/laravel.log {
-    missingok
-    compress
-    notifempty
-    create 755 www-data www-data
-    size 1
-    copytruncate
-    su www-data www-data
-}

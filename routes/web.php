@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/desktop', function () {
-    return [
-        'authenticated' => \Illuminate\Support\Facades\Auth::check()
-    ];
-})->middleware('auth');
+Route::get('/', function () {
+    return view('welcome');
+});

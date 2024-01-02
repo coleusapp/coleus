@@ -141,7 +141,7 @@ return [
 
     'maintenance' => [
         'driver' => 'file',
-        // 'store'  => 'redis',
+        // 'store' => 'redis',
     ],
 
     /*
@@ -159,6 +159,10 @@ return [
         /*
          * Package Service Providers...
          */
+        \Coleus\Ui\UiServiceProvider::class,
+        \Coleus\System\SystemServiceProvider::class,
+        \Coleus\Account\AccountServiceProvider::class,
+        \Coleus\Bucket\BucketServiceProvider::class,
 
         /*
          * Application Service Providers...
