@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  web:
+    image: coleus/coleus:latest
+    platform: linux/amd64
+    restart: unless-stopped
+    user: www-data
+    volumes:
+      - ../../.env:/var/www/html/.env
+    ports:
+      - "80:80"
+    depends_on:
+      - database
+  database:
+    image: mariadb:11.0
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=database
+      - MARIADB_USER=user
+      - MARIADB_PASSWORD=password
+    volumes:
+      - ./mariadb-data:/var/lib/mysql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-u", "user", "-ppassword" ]
+      interval: 60s
+      retries: 10
