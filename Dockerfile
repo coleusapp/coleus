@@ -1,4 +1,4 @@
-FROM php:8.2-cli-alpine3.18 AS base
+FROM php:8.2-cli-alpine3.19 AS base
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
@@ -8,7 +8,7 @@ RUN \
     install-php-extensions bcmath pdo_mysql openswoole pcntl && \
     rm /usr/local/bin/install-php-extensions
 
-FROM node:20-alpine3.18 AS node
+FROM node:21-alpine3.19 AS node
 
 COPY . /var/www/html
 
@@ -18,7 +18,7 @@ RUN \
     npm run build && \
     rm -rf node_modules
 
-FROM composer:2.5 AS composer
+FROM composer:2.6 AS composer
 
 COPY composer.json composer.lock /var/www/html/
 
