@@ -832,16 +832,16 @@
         },
         {
             "name": "coleus/framework",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/framework.git",
-                "reference": "78e8efb5b23199921513d5add1a81231e23bdb57"
+                "reference": "0013ddb12bb967572bd973f3a84412464f01c341"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/framework/zipball/78e8efb5b23199921513d5add1a81231e23bdb57",
-                "reference": "78e8efb5b23199921513d5add1a81231e23bdb57",
+                "url": "https://api.github.com/repos/coleusapp/framework/zipball/0013ddb12bb967572bd973f3a84412464f01c341",
+                "reference": "0013ddb12bb967572bd973f3a84412464f01c341",
                 "shasum": ""
             },
             "require": {
@@ -888,7 +888,7 @@
                 "issues": "https://github.com/coleusapp/framework/issues",
                 "source": "https://github.com/coleusapp/framework"
             },
-            "time": "2024-01-08T07:02:08+00:00"
+            "time": "2024-01-08T07:15:15+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
