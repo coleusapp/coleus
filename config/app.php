@@ -163,6 +163,7 @@ return [
         \Coleus\System\SystemServiceProvider::class,
         \Coleus\Account\AccountServiceProvider::class,
         \Coleus\Bucket\BucketServiceProvider::class,
+        \Coleus\Music\MusicServiceProvider::class,
 
         /*
          * Application Service Providers...
