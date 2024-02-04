@@ -1,6 +1,5 @@
 <?php
 
-use App\Services\ShellService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    dd(\App\Services\DockerService::up(''));
-
     return \Inertia\Inertia::render('TheDesktop');
 });

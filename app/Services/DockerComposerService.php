@@ -2,8 +2,6 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Process;
-
 class DockerComposerService
 {
     public static function up($app)

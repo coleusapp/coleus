@@ -2,11 +2,6 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Process;
-
-/**
- * Docker app
- */
 class AppService
 {
     public static function install($app)
