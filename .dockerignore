@@ -9,8 +9,7 @@ storage/framework/cache/**
  
 # Environment files
 .env
-.env.*
- 
+
 # PHPUnit and tests (for production builds)
 phpunit.xml
 phpunit.xml.dist
@@ -28,6 +27,7 @@ bootstrap/cache/**
 *.log
 *.idea
 *.vscode
+*.md
 .DS_Store
 Thumbs.db
  

@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  app:
+    image: coleus/coleus:latest
+    volumes:
+      - ./.env:/app/.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - app
+  db:
+    image: mariadb:10.11
+    environment:
+      - MARIADB_ROOT_PASSWORD=secret
+      - MARIADB_DATABASE=coleus
+      - MARIADB_USER=user
+      - MARIADB_PASSWORD=secret
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app
+networks:
+  app:
+volumes:
+  db_data:
