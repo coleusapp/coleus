@@ -137,16 +137,16 @@
         },
         {
             "name": "coleus/health",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/health.git",
-                "reference": "c23284037cb09cf32ed5a62f9b22030451d59915"
+                "reference": "6bb80ad0793fafdd611eda3f69675ae0e9f18889"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/health/zipball/c23284037cb09cf32ed5a62f9b22030451d59915",
-                "reference": "c23284037cb09cf32ed5a62f9b22030451d59915",
+                "url": "https://api.github.com/repos/coleusapp/health/zipball/6bb80ad0793fafdd611eda3f69675ae0e9f18889",
+                "reference": "6bb80ad0793fafdd611eda3f69675ae0e9f18889",
                 "shasum": ""
             },
             "require": {
@@ -184,13 +184,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/health/issues",
-                "source": "https://github.com/coleusapp/health/tree/v1.0.31"
+                "source": "https://github.com/coleusapp/health/tree/v1.0.32"
             },
-            "time": "2025-09-26T01:15:06+00:00"
+            "time": "2025-09-26T23:42:24+00:00"
         },
         {
             "name": "coleus/support",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/support.git",
@@ -232,13 +232,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.31"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.32"
             },
             "time": "2025-09-22T01:20:44+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -280,13 +280,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.31"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.32"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
         {
             "name": "coleus/users",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/users.git",
@@ -331,13 +331,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/users/issues",
-                "source": "https://github.com/coleusapp/users/tree/v1.0.31"
+                "source": "https://github.com/coleusapp/users/tree/v1.0.32"
             },
             "time": "2025-09-23T23:47:11+00:00"
         },
         {
             "name": "coleus/widgets",
-            "version": "v1.0.31",
+            "version": "v1.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/widgets.git",
@@ -379,7 +379,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/widgets/issues",
-                "source": "https://github.com/coleusapp/widgets/tree/v1.0.31"
+                "source": "https://github.com/coleusapp/widgets/tree/v1.0.32"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
@@ -1303,16 +1303,16 @@
         },
         {
             "name": "inertiajs/inertia-laravel",
-            "version": "v2.0.7",
+            "version": "v2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inertiajs/inertia-laravel.git",
-                "reference": "a08aea5a16fed187dcf815c9037b62cc544ab809"
+                "reference": "82931953935e0b9b9a7f9ab26e3a9d4603e02917"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/a08aea5a16fed187dcf815c9037b62cc544ab809",
-                "reference": "a08aea5a16fed187dcf815c9037b62cc544ab809",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/82931953935e0b9b9a7f9ab26e3a9d4603e02917",
+                "reference": "82931953935e0b9b9a7f9ab26e3a9d4603e02917",
                 "shasum": ""
             },
             "require": {
@@ -1367,9 +1367,9 @@
             ],
             "support": {
                 "issues": "https://github.com/inertiajs/inertia-laravel/issues",
-                "source": "https://github.com/inertiajs/inertia-laravel/tree/v2.0.7"
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v2.0.9"
             },
-            "time": "2025-09-24T16:49:48+00:00"
+            "time": "2025-09-26T17:20:38+00:00"
         },
         {
             "name": "laravel/framework",
