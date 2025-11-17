@@ -137,7 +137,7 @@
         },
         {
             "name": "coleus/health",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/health.git",
@@ -189,22 +189,22 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/health/issues",
-                "source": "https://github.com/coleusapp/health/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/health/tree/v1.0.38"
             },
             "time": "2025-11-17T01:02:37+00:00"
         },
         {
             "name": "coleus/music",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/music.git",
-                "reference": "424e954da22f94cef9a5195ca0b366f7a04d013a"
+                "reference": "3ad6f484a7dfcb4bd5fbc011152fb348376d58f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/music/zipball/424e954da22f94cef9a5195ca0b366f7a04d013a",
-                "reference": "424e954da22f94cef9a5195ca0b366f7a04d013a",
+                "url": "https://api.github.com/repos/coleusapp/music/zipball/3ad6f484a7dfcb4bd5fbc011152fb348376d58f8",
+                "reference": "3ad6f484a7dfcb4bd5fbc011152fb348376d58f8",
                 "shasum": ""
             },
             "require": {
@@ -247,13 +247,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/music/issues",
-                "source": "https://github.com/coleusapp/music/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/music/tree/v1.0.38"
             },
-            "time": "2025-11-17T01:02:37+00:00"
+            "time": "2025-11-17T01:10:24+00:00"
         },
         {
             "name": "coleus/support",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/support.git",
@@ -299,13 +299,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.38"
             },
             "time": "2025-10-28T01:50:55+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -347,13 +347,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.38"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
         {
             "name": "coleus/users",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/users.git",
@@ -399,13 +399,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/users/issues",
-                "source": "https://github.com/coleusapp/users/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/users/tree/v1.0.38"
             },
             "time": "2025-10-28T01:52:53+00:00"
         },
         {
             "name": "coleus/widgets",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/widgets.git",
@@ -447,7 +447,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/widgets/issues",
-                "source": "https://github.com/coleusapp/widgets/tree/v1.0.37"
+                "source": "https://github.com/coleusapp/widgets/tree/v1.0.38"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
