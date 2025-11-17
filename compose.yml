@@ -5,6 +5,7 @@ services:
     image: coleus/coleus:latest
     volumes:
       - ./.env:/app/.env
+      - ./storage:/app/storage
     ports:
       - "80:8000"
     depends_on:
