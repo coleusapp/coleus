@@ -5,11 +5,13 @@
 set -e
 
 DOCKER_IMAGE="coleus/coleus"
-VERSION="$1"
 
-if [[ -z "$VERSION" ]]; then
-    echo "Usage: bin/deploy.sh <version>"
-    exit 1
+VERSION="${1:-patch}"
+
+LATEST_TAG=$(git tag --list 'v*' --sort=-v:refname | head -n1)
+
+if [[ "$VERSION" = 'patch' ]]; then
+  VERSION="v$(./bin/semver bump "$VERSION" "$LATEST_TAG")"
 fi
 
 composer update 'coleus/*' --with-all-dependencies --no-interaction
