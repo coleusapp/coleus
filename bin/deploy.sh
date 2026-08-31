@@ -4,8 +4,6 @@
 
 set -e
 
-DOCKER_IMAGE="coleus/coleus"
-
 VERSION="${1:-patch}"
 
 LATEST_TAG=$(git tag --list 'v*' --sort=-v:refname | head -n1)
@@ -20,13 +18,10 @@ git add composer.json composer.lock
 git commit -m "Update coleus packages to $VERSION"
 git push origin main
 
-docker build -t "$DOCKER_IMAGE:$VERSION" -t "$DOCKER_IMAGE:latest" .
-
 if [[ -n "$DOCKERHUB_USERNAME" && -n "$DOCKERHUB_TOKEN" ]]; then
     echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
 fi
 
-docker push "$DOCKER_IMAGE:$VERSION"
-docker push "$DOCKER_IMAGE:latest"
+docker buildx build --platform linux/amd64,linux/arm64 -t "coleus/coleus:$VERSION" -t "coleus/coleus:latest" --push .
 
 echo "Deployed $VERSION"
