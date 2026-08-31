@@ -14,8 +14,6 @@ fi
 
 composer update 'coleus/*' --with-all-dependencies --no-interaction
 
-php artisan vendor:publish --all -n
-
 git add composer.json composer.lock public/*
 git commit -m "Update coleus packages to $VERSION"
 git push origin main
