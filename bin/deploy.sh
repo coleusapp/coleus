@@ -14,14 +14,9 @@ fi
 
 composer update 'coleus/*' --with-all-dependencies --no-interaction
 
-git add .
-git commit -m "Update coleus packages to $VERSION"
-git push origin main
-
-#if [[ -n "$DOCKERHUB_USERNAME" && -n "$DOCKERHUB_TOKEN" ]]; then
-#    echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-#fi
-
+git add . && \
+git commit -m "Update coleus packages to $VERSION" && \
+git push origin main && \
 docker buildx build --platform linux/amd64,linux/arm64 -t "coleus/coleus:$VERSION" -t "coleus/coleus:latest" --push .
 
 echo "Deployed $VERSION"
