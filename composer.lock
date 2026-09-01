@@ -137,16 +137,16 @@
         },
         {
             "name": "coleus/health",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/health.git",
-                "reference": "ed4c4edfd6523cf35e537af79edd52420d851b95"
+                "reference": "61cef69dfc7997d068e59cdb1723e4c0ca019f4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/health/zipball/ed4c4edfd6523cf35e537af79edd52420d851b95",
-                "reference": "ed4c4edfd6523cf35e537af79edd52420d851b95",
+                "url": "https://api.github.com/repos/coleusapp/health/zipball/61cef69dfc7997d068e59cdb1723e4c0ca019f4c",
+                "reference": "61cef69dfc7997d068e59cdb1723e4c0ca019f4c",
                 "shasum": ""
             },
             "require": {
@@ -190,22 +190,22 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/health/issues",
-                "source": "https://github.com/coleusapp/health/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/health/tree/v1.0.50"
             },
-            "time": "2026-08-31T00:40:45+00:00"
+            "time": "2026-09-01T02:04:15+00:00"
         },
         {
             "name": "coleus/music",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/music.git",
-                "reference": "a0bf429d9fed520c740f5365eac2758a39501da5"
+                "reference": "fb37c2c2e6aaa7f45557d5f98b4cb2916c949786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/music/zipball/a0bf429d9fed520c740f5365eac2758a39501da5",
-                "reference": "a0bf429d9fed520c740f5365eac2758a39501da5",
+                "url": "https://api.github.com/repos/coleusapp/music/zipball/fb37c2c2e6aaa7f45557d5f98b4cb2916c949786",
+                "reference": "fb37c2c2e6aaa7f45557d5f98b4cb2916c949786",
                 "shasum": ""
             },
             "require": {
@@ -248,22 +248,22 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/music/issues",
-                "source": "https://github.com/coleusapp/music/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/music/tree/v1.0.50"
             },
-            "time": "2026-08-31T00:40:45+00:00"
+            "time": "2026-09-01T02:04:15+00:00"
         },
         {
             "name": "coleus/support",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/support.git",
-                "reference": "879ef57e36e737c452f0281239d1bc41ccce76a2"
+                "reference": "24a694a63bf68032bdd7771cdcedff98b337c126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/support/zipball/879ef57e36e737c452f0281239d1bc41ccce76a2",
-                "reference": "879ef57e36e737c452f0281239d1bc41ccce76a2",
+                "url": "https://api.github.com/repos/coleusapp/support/zipball/24a694a63bf68032bdd7771cdcedff98b337c126",
+                "reference": "24a694a63bf68032bdd7771cdcedff98b337c126",
                 "shasum": ""
             },
             "require": {
@@ -301,13 +301,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.50"
             },
-            "time": "2026-08-30T22:52:47+00:00"
+            "time": "2026-09-01T02:03:20+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -349,13 +349,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.50"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
         {
             "name": "coleus/users",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/users.git",
@@ -401,13 +401,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/users/issues",
-                "source": "https://github.com/coleusapp/users/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/users/tree/v1.0.50"
             },
             "time": "2026-08-06T19:24:25+00:00"
         },
         {
             "name": "coleus/widgets",
-            "version": "v1.0.49",
+            "version": "v1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/widgets.git",
@@ -449,7 +449,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/widgets/issues",
-                "source": "https://github.com/coleusapp/widgets/tree/v1.0.49"
+                "source": "https://github.com/coleusapp/widgets/tree/v1.0.50"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
@@ -3226,16 +3226,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.3.3",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "fb19eedd2bb67ff8cf7a5502ad329e701d6398a3"
+                "reference": "148cefffaf0233e4c08cc13db8a195a56dd6dfe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fb19eedd2bb67ff8cf7a5502ad329e701d6398a3",
-                "reference": "fb19eedd2bb67ff8cf7a5502ad329e701d6398a3",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/148cefffaf0233e4c08cc13db8a195a56dd6dfe9",
+                "reference": "148cefffaf0233e4c08cc13db8a195a56dd6dfe9",
                 "shasum": ""
             },
             "require": {
@@ -3267,9 +3267,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.3.3"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.3.5"
             },
-            "time": "2026-07-08T07:01:06+00:00"
+            "time": "2026-08-31T16:05:28+00:00"
         },
         {
             "name": "psr/clock",
