@@ -6,5 +6,5 @@ cd "$(dirname "$0")/.."
 
 git pull origin main && docker compose pull && docker compose up -d
 
-docker compose exec app php artisan vendor:publish --force --all -n
-#docker compose exec app php artisan migrate --force
+docker compose exec app php artisan vendor:publish --all -n
+docker compose exec app php artisan migrate --force

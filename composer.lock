@@ -137,19 +137,20 @@
         },
         {
             "name": "coleus/health",
-            "version": "v1.0.50",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/health.git",
-                "reference": "61cef69dfc7997d068e59cdb1723e4c0ca019f4c"
+                "reference": "f4a4304a797fcfa03a421b825e3b99512a5360dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/health/zipball/61cef69dfc7997d068e59cdb1723e4c0ca019f4c",
-                "reference": "61cef69dfc7997d068e59cdb1723e4c0ca019f4c",
+                "url": "https://api.github.com/repos/coleusapp/health/zipball/f4a4304a797fcfa03a421b825e3b99512a5360dc",
+                "reference": "f4a4304a797fcfa03a421b825e3b99512a5360dc",
                 "shasum": ""
             },
             "require": {
+                "coleus/settings": "^1.0",
                 "coleus/support": "^1.0",
                 "coleus/table": "^1.0",
                 "coleus/users": "^1.0",
@@ -164,7 +165,6 @@
                 "php": "^8.4",
                 "spatie/laravel-data": "^4.17",
                 "spatie/laravel-package-tools": "^1.9",
-                "spatie/laravel-settings": "^3.5",
                 "tightenco/ziggy": "^v2.5"
             },
             "type": "library",
@@ -190,13 +190,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/health/issues",
-                "source": "https://github.com/coleusapp/health/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/health/tree/v1.0.51"
             },
-            "time": "2026-09-01T02:04:15+00:00"
+            "time": "2026-09-02T02:07:54+00:00"
         },
         {
             "name": "coleus/music",
-            "version": "v1.0.50",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/music.git",
@@ -248,22 +248,70 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/music/issues",
-                "source": "https://github.com/coleusapp/music/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/music/tree/v1.0.51"
             },
             "time": "2026-09-01T02:04:15+00:00"
         },
         {
-            "name": "coleus/support",
-            "version": "v1.0.50",
+            "name": "coleus/settings",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coleusapp/support.git",
-                "reference": "24a694a63bf68032bdd7771cdcedff98b337c126"
+                "url": "https://github.com/coleusapp/settings.git",
+                "reference": "f915d4e7fe3a2ea9ff7dec35b072bddff8262113"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/support/zipball/24a694a63bf68032bdd7771cdcedff98b337c126",
-                "reference": "24a694a63bf68032bdd7771cdcedff98b337c126",
+                "url": "https://api.github.com/repos/coleusapp/settings/zipball/f915d4e7fe3a2ea9ff7dec35b072bddff8262113",
+                "reference": "f915d4e7fe3a2ea9ff7dec35b072bddff8262113",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.45|^11.0|^12.0",
+                "illuminate/contracts": "^10.45|^11.0|^12.0",
+                "illuminate/database": "^10.45|^11.0|^12.0",
+                "illuminate/filesystem": "^10.45|^11.0|^12.0",
+                "illuminate/support": "^10.45|^11.0|^12.0",
+                "illuminate/validation": "^10.45|^11.0|^12.0",
+                "illuminate/view": "^10.45|^11.0|^12.0",
+                "php": "^8.4",
+                "spatie/laravel-package-tools": "^1.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Coleus\\Settings\\SettingsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coleus\\Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/coleusapp/settings/issues",
+                "source": "https://github.com/coleusapp/settings/tree/v1.0.51"
+            },
+            "time": "2026-09-02T02:07:54+00:00"
+        },
+        {
+            "name": "coleus/support",
+            "version": "v1.0.51",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coleusapp/support.git",
+                "reference": "82a5c4094e8492108291da8f8268e6caf4684118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coleusapp/support/zipball/82a5c4094e8492108291da8f8268e6caf4684118",
+                "reference": "82a5c4094e8492108291da8f8268e6caf4684118",
                 "shasum": ""
             },
             "require": {
@@ -301,13 +349,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.51"
             },
-            "time": "2026-09-01T02:03:20+00:00"
+            "time": "2026-09-02T02:07:54+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.50",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -349,13 +397,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.51"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
         {
             "name": "coleus/users",
-            "version": "v1.0.50",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/users.git",
@@ -401,13 +449,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/users/issues",
-                "source": "https://github.com/coleusapp/users/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/users/tree/v1.0.51"
             },
             "time": "2026-08-06T19:24:25+00:00"
         },
         {
             "name": "coleus/widgets",
-            "version": "v1.0.50",
+            "version": "v1.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/widgets.git",
@@ -449,7 +497,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/widgets/issues",
-                "source": "https://github.com/coleusapp/widgets/tree/v1.0.50"
+                "source": "https://github.com/coleusapp/widgets/tree/v1.0.51"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
@@ -1498,16 +1546,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.68.0",
+            "version": "v12.69.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1343c22b92edd48e29ff273d8ce7c15cf75d974c"
+                "reference": "0c07b0b1f88af44d8558ffadf66900a860f93c23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1343c22b92edd48e29ff273d8ce7c15cf75d974c",
-                "reference": "1343c22b92edd48e29ff273d8ce7c15cf75d974c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0c07b0b1f88af44d8558ffadf66900a860f93c23",
+                "reference": "0c07b0b1f88af44d8558ffadf66900a860f93c23",
                 "shasum": ""
             },
             "require": {
@@ -1716,7 +1764,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-08-25T14:18:36+00:00"
+            "time": "2026-09-01T21:34:37+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -4269,91 +4317,6 @@
             "time": "2026-03-17T22:46:46+00:00"
         },
         {
-            "name": "spatie/laravel-settings",
-            "version": "3.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-settings.git",
-                "reference": "6c1351cf57c4ae96cd2313ae395c6d367dfeee01"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-settings/zipball/6c1351cf57c4ae96cd2313ae395c6d367dfeee01",
-                "reference": "6c1351cf57c4ae96cd2313ae395c6d367dfeee01",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/database": "^11.0|^12.0|^13.0",
-                "php": "^8.2",
-                "phpdocumentor/type-resolver": "^1.5|^2.0",
-                "spatie/temporary-directory": "^1.3|^2.0"
-            },
-            "require-dev": {
-                "ext-redis": "*",
-                "mockery/mockery": "^1.4",
-                "orchestra/testbench": "^9.0|^10.0|^11.0",
-                "pestphp/pest": "^2.0|^3.0|^4.0",
-                "pestphp/pest-plugin-laravel": "^2.0|^3.0|^4.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "spatie/laravel-data": "^2.0.0|^4.0.0",
-                "spatie/pest-plugin-snapshots": "^2.0",
-                "spatie/phpunit-snapshot-assertions": "^4.2|^5.0",
-                "spatie/ray": "^1.36"
-            },
-            "suggest": {
-                "spatie/data-transfer-object": "Allows for DTO casting to settings. (deprecated)"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Spatie\\LaravelSettings\\LaravelSettingsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\LaravelSettings\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ruben Van Assche",
-                    "email": "ruben@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Store your application settings",
-            "homepage": "https://github.com/spatie/laravel-settings",
-            "keywords": [
-                "laravel-settings",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-settings/issues",
-                "source": "https://github.com/spatie/laravel-settings/tree/3.9.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-05-26T13:18:06+00:00"
-        },
-        {
             "name": "spatie/php-structure-discoverer",
             "version": "2.4.4",
             "source": {
@@ -4431,67 +4394,6 @@
                 }
             ],
             "time": "2026-06-15T07:14:32+00:00"
-        },
-        {
-            "name": "spatie/temporary-directory",
-            "version": "2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "32cbb9645b28839cf4f476708e99a2c70e6802c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/32cbb9645b28839cf4f476708e99a2c70e6802c9",
-                "reference": "32cbb9645b28839cf4f476708e99a2c70e6802c9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\TemporaryDirectory\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alex Vanderbist",
-                    "email": "alex@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Easily create, use and destroy temporary directories",
-            "homepage": "https://github.com/spatie/temporary-directory",
-            "keywords": [
-                "php",
-                "spatie",
-                "temporary-directory"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/temporary-directory/issues",
-                "source": "https://github.com/spatie/temporary-directory/tree/2.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-06-22T07:55:44+00:00"
         },
         {
             "name": "symfony/clock",
