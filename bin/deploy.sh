@@ -15,7 +15,7 @@ fi
 composer update 'coleus/*' --with-all-dependencies --no-interaction
 
 git add . && \
-git commit -m "Update coleus packages to $VERSION" && \
+(git commit -m "Update coleus packages to $VERSION" || true) && \
 git push origin main && \
 docker buildx build --platform linux/amd64,linux/arm64 -t "coleus/coleus:$VERSION" -t "coleus/coleus:latest" --push .
 
