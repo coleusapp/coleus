@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a661c842074a8460f257cd0467e979e9",
+    "content-hash": "566a2f01773c386f5b1f4ed59a37fd96",
     "packages": [
         {
             "name": "brick/math",
@@ -141,20 +141,127 @@
             "time": "2026-09-06T14:11:38+00:00"
         },
         {
-            "name": "coleus/health",
-            "version": "v1.0.51",
+            "name": "coleus/apps",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coleusapp/health.git",
-                "reference": "f4a4304a797fcfa03a421b825e3b99512a5360dc"
+                "url": "https://github.com/coleusapp/apps.git",
+                "reference": "e227a19d74e2f6252be2eb1c0a86db5908476bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/health/zipball/f4a4304a797fcfa03a421b825e3b99512a5360dc",
-                "reference": "f4a4304a797fcfa03a421b825e3b99512a5360dc",
+                "url": "https://api.github.com/repos/coleusapp/apps/zipball/e227a19d74e2f6252be2eb1c0a86db5908476bdf",
+                "reference": "e227a19d74e2f6252be2eb1c0a86db5908476bdf",
                 "shasum": ""
             },
             "require": {
+                "illuminate/console": "^10.45|^11.0|^12.0",
+                "illuminate/contracts": "^10.45|^11.0|^12.0",
+                "illuminate/database": "^10.45|^11.0|^12.0",
+                "illuminate/filesystem": "^10.45|^11.0|^12.0",
+                "illuminate/support": "^10.45|^11.0|^12.0",
+                "illuminate/validation": "^10.45|^11.0|^12.0",
+                "illuminate/view": "^10.45|^11.0|^12.0",
+                "php": "^8.4",
+                "spatie/laravel-package-tools": "^1.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Coleus\\Apps\\AppsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coleus\\Apps\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/coleusapp/apps/issues",
+                "source": "https://github.com/coleusapp/apps/tree/v1.0.53"
+            },
+            "time": "2026-09-06T22:07:39+00:00"
+        },
+        {
+            "name": "coleus/calendar",
+            "version": "v1.0.53",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coleusapp/calendar.git",
+                "reference": "049e0892dfeeab54eedca305db80bed7113c6fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coleusapp/calendar/zipball/049e0892dfeeab54eedca305db80bed7113c6fcc",
+                "reference": "049e0892dfeeab54eedca305db80bed7113c6fcc",
+                "shasum": ""
+            },
+            "require": {
+                "coleus/apps": "^1.0",
+                "coleus/support": "^1.0",
+                "coleus/users": "^1.0",
+                "illuminate/console": "^10.45|^11.0|^12.0",
+                "illuminate/contracts": "^10.45|^11.0|^12.0",
+                "illuminate/database": "^10.45|^11.0|^12.0",
+                "illuminate/filesystem": "^10.45|^11.0|^12.0",
+                "illuminate/support": "^10.45|^11.0|^12.0",
+                "illuminate/validation": "^10.45|^11.0|^12.0",
+                "illuminate/view": "^10.45|^11.0|^12.0",
+                "inertiajs/inertia-laravel": "^2.0",
+                "php": "^8.4",
+                "spatie/laravel-data": "^4.17",
+                "spatie/laravel-package-tools": "^1.9",
+                "tightenco/ziggy": "^v2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Calendar": "Coleus\\Calendar\\Facades\\Calendar"
+                    },
+                    "providers": [
+                        "Coleus\\Calendar\\CalendarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coleus\\Calendar\\": "src/",
+                    "Coleus\\Calendar\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/coleusapp/calendar/issues",
+                "source": "https://github.com/coleusapp/calendar/tree/v1.0.53"
+            },
+            "time": "2026-09-06T22:07:39+00:00"
+        },
+        {
+            "name": "coleus/health",
+            "version": "v1.0.53",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coleusapp/health.git",
+                "reference": "92c28f910ff90ac95672f1f4aca29585832b7935"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coleusapp/health/zipball/92c28f910ff90ac95672f1f4aca29585832b7935",
+                "reference": "92c28f910ff90ac95672f1f4aca29585832b7935",
+                "shasum": ""
+            },
+            "require": {
+                "coleus/apps": "^1.0",
                 "coleus/settings": "^1.0",
                 "coleus/support": "^1.0",
                 "coleus/table": "^1.0",
@@ -195,25 +302,26 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/health/issues",
-                "source": "https://github.com/coleusapp/health/tree/v1.0.51"
+                "source": "https://github.com/coleusapp/health/tree/v1.0.53"
             },
-            "time": "2026-09-02T02:07:54+00:00"
+            "time": "2026-09-06T22:07:39+00:00"
         },
         {
             "name": "coleus/music",
-            "version": "v1.0.51",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/music.git",
-                "reference": "fb37c2c2e6aaa7f45557d5f98b4cb2916c949786"
+                "reference": "f7bd725f87004b17373ace125fe3d6748aa85c7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/music/zipball/fb37c2c2e6aaa7f45557d5f98b4cb2916c949786",
-                "reference": "fb37c2c2e6aaa7f45557d5f98b4cb2916c949786",
+                "url": "https://api.github.com/repos/coleusapp/music/zipball/f7bd725f87004b17373ace125fe3d6748aa85c7d",
+                "reference": "f7bd725f87004b17373ace125fe3d6748aa85c7d",
                 "shasum": ""
             },
             "require": {
+                "coleus/apps": "^1.0",
                 "coleus/support": "^1.0",
                 "coleus/table": "^1.0",
                 "coleus/users": "^1.0",
@@ -253,25 +361,85 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/music/issues",
-                "source": "https://github.com/coleusapp/music/tree/v1.0.51"
+                "source": "https://github.com/coleusapp/music/tree/v1.0.53"
             },
-            "time": "2026-09-01T02:04:15+00:00"
+            "time": "2026-09-06T22:07:39+00:00"
         },
         {
-            "name": "coleus/settings",
-            "version": "v1.0.51",
+            "name": "coleus/notes",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
-                "url": "https://github.com/coleusapp/settings.git",
-                "reference": "f915d4e7fe3a2ea9ff7dec35b072bddff8262113"
+                "url": "https://github.com/coleusapp/notes.git",
+                "reference": "6915c6e2172b95c7d947f7433ed930071afaae04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/settings/zipball/f915d4e7fe3a2ea9ff7dec35b072bddff8262113",
-                "reference": "f915d4e7fe3a2ea9ff7dec35b072bddff8262113",
+                "url": "https://api.github.com/repos/coleusapp/notes/zipball/6915c6e2172b95c7d947f7433ed930071afaae04",
+                "reference": "6915c6e2172b95c7d947f7433ed930071afaae04",
                 "shasum": ""
             },
             "require": {
+                "coleus/apps": "^1.0",
+                "coleus/support": "^1.0",
+                "coleus/users": "^1.0",
+                "illuminate/console": "^10.45|^11.0|^12.0",
+                "illuminate/contracts": "^10.45|^11.0|^12.0",
+                "illuminate/database": "^10.45|^11.0|^12.0",
+                "illuminate/filesystem": "^10.45|^11.0|^12.0",
+                "illuminate/support": "^10.45|^11.0|^12.0",
+                "illuminate/validation": "^10.45|^11.0|^12.0",
+                "illuminate/view": "^10.45|^11.0|^12.0",
+                "inertiajs/inertia-laravel": "^2.0",
+                "php": "^8.4",
+                "spatie/laravel-data": "^4.17",
+                "spatie/laravel-package-tools": "^1.9",
+                "tightenco/ziggy": "^v2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Notes": "Coleus\\Notes\\Facades\\Notes"
+                    },
+                    "providers": [
+                        "Coleus\\Notes\\NotesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coleus\\Notes\\": "src/",
+                    "Coleus\\Notes\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/coleusapp/notes/issues",
+                "source": "https://github.com/coleusapp/notes/tree/v1.0.53"
+            },
+            "time": "2026-09-06T22:07:39+00:00"
+        },
+        {
+            "name": "coleus/settings",
+            "version": "v1.0.53",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coleusapp/settings.git",
+                "reference": "0ac406accba16c68cfe49417b729dc3bb510803f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coleusapp/settings/zipball/0ac406accba16c68cfe49417b729dc3bb510803f",
+                "reference": "0ac406accba16c68cfe49417b729dc3bb510803f",
+                "shasum": ""
+            },
+            "require": {
+                "coleus/apps": "^1.0",
+                "coleus/users": "^1.0",
                 "illuminate/console": "^10.45|^11.0|^12.0",
                 "illuminate/contracts": "^10.45|^11.0|^12.0",
                 "illuminate/database": "^10.45|^11.0|^12.0",
@@ -301,13 +469,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/settings/issues",
-                "source": "https://github.com/coleusapp/settings/tree/v1.0.51"
+                "source": "https://github.com/coleusapp/settings/tree/v1.0.53"
             },
-            "time": "2026-09-02T02:07:54+00:00"
+            "time": "2026-09-06T22:07:39+00:00"
         },
         {
             "name": "coleus/support",
-            "version": "v1.0.52",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/support.git",
@@ -354,13 +522,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.52"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.53"
             },
             "time": "2026-09-06T22:07:39+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.52",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -402,13 +570,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.52"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.53"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
         {
             "name": "coleus/users",
-            "version": "v1.0.52",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/users.git",
@@ -454,13 +622,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/users/issues",
-                "source": "https://github.com/coleusapp/users/tree/v1.0.52"
+                "source": "https://github.com/coleusapp/users/tree/v1.0.53"
             },
             "time": "2026-08-06T19:24:25+00:00"
         },
         {
             "name": "coleus/widgets",
-            "version": "v1.0.52",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/widgets.git",
@@ -502,7 +670,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/widgets/issues",
-                "source": "https://github.com/coleusapp/widgets/tree/v1.0.52"
+                "source": "https://github.com/coleusapp/widgets/tree/v1.0.53"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },
