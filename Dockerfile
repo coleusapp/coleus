@@ -24,6 +24,6 @@ USER ${USER}
 COPY --chown=${USER}:${USER} --from=composer /app /app
 COPY --chown=${USER}:${USER} . /app
 
-RUN cd /app && php artisan vendor:publish --all --force -n
+RUN /app/bin/publish
 
 EXPOSE 8000

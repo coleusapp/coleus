@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Migrations are deliberately not published: each coleus package loads its own
+# from vendor with fixed file names. A published copy gets a new timestamp, so
+# migrate would run it again and fail on the existing table.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+TAGS=""
+
+for PACKAGE in calendar health music notes users; do
+  TAGS="$TAGS --tag=$PACKAGE-config --tag=$PACKAGE-assets --tag=$PACKAGE-views"
+done
+
+php artisan vendor:publish $TAGS --force -n
