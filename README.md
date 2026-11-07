@@ -5,7 +5,7 @@
 Locally:
 
 ```bash
-git add . && git commit -m "wip" && ./bin/deploy.sh
+git pull && git add . && git commit -m "wip" && ./bin/deploy.sh
 ```
 
 Pass a version to override the auto patch bump: `./bin/deploy.sh v1.0.49`.
