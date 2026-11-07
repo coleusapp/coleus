@@ -16,7 +16,7 @@ RUN \
     setcap -r /usr/local/bin/frankenphp; \
     chown -R ${USER}:${USER} /config/caddy /data/caddy
 
-RUN install-php-extensions pdo_mysql && \
+RUN install-php-extensions pdo_mysql gd && \
     mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 USER ${USER}
