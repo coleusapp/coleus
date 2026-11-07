@@ -2,11 +2,17 @@
 
 ## Deploy
 
-On the production server:
+Locally:
 
 ```bash
-bin/deploy.sh          # auto-bumps patch version
-bin/deploy.sh v1.0.49  # or pass a version
+git add . && git commit -m "wip" && ./bin/deploy.sh
+```
+
+Pass a version to override the auto patch bump: `./bin/deploy.sh v1.0.49`.
+
+Then on the production server:
+
+```bash
 bin/pull
 ```
 
