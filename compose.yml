@@ -10,6 +10,17 @@ services:
       - db
     networks:
       - app
+  queue:
+    image: coleus/coleus:latest
+    command: php artisan queue:work --tries=3
+    volumes:
+      - ./.env:/app/.env
+      - ./storage:/app/storage
+    depends_on:
+      - db
+    networks:
+      - app
+    restart: unless-stopped
   db:
     image: mariadb:10.11
     environment:
