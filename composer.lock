@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "566a2f01773c386f5b1f4ed59a37fd96",
+    "content-hash": "dfdda60dbf5db731879b6e671890cb1a",
     "packages": [
         {
             "name": "brick/math",
@@ -247,6 +247,56 @@
             "time": "2026-11-07T07:59:34+00:00"
         },
         {
+            "name": "coleus/frame",
+            "version": "v1.0.59",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coleusapp/frame.git",
+                "reference": "ceba23299eec46bcac1ab0bdbbc8e97c6f7dfb31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coleusapp/frame/zipball/ceba23299eec46bcac1ab0bdbbc8e97c6f7dfb31",
+                "reference": "ceba23299eec46bcac1ab0bdbbc8e97c6f7dfb31",
+                "shasum": ""
+            },
+            "require": {
+                "coleus/apps": "^1.0",
+                "coleus/support": "^1.0",
+                "coleus/users": "^1.0",
+                "illuminate/console": "^10.45|^11.0|^12.0",
+                "illuminate/contracts": "^10.45|^11.0|^12.0",
+                "illuminate/database": "^10.45|^11.0|^12.0",
+                "illuminate/support": "^10.45|^11.0|^12.0",
+                "php": "^8.4",
+                "spatie/laravel-data": "^4.17",
+                "spatie/laravel-package-tools": "^1.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Coleus\\Frame\\FrameServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Coleus\\Frame\\": "src/",
+                    "Coleus\\Frame\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/coleusapp/frame/issues",
+                "source": "https://github.com/coleusapp/frame/tree/v1.0.59"
+            },
+            "time": "2026-11-07T09:53:46+00:00"
+        },
+        {
             "name": "coleus/health",
             "version": "v1.0.59",
             "source": {
@@ -426,16 +476,16 @@
         },
         {
             "name": "coleus/settings",
-            "version": "v1.0.58",
+            "version": "v1.0.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/settings.git",
-                "reference": "6bc3965467713886ba6d4fb97b8b9ef4436c425b"
+                "reference": "7b572e1074676ad9ae02fae9da92dbb5468c9383"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coleusapp/settings/zipball/6bc3965467713886ba6d4fb97b8b9ef4436c425b",
-                "reference": "6bc3965467713886ba6d4fb97b8b9ef4436c425b",
+                "url": "https://api.github.com/repos/coleusapp/settings/zipball/7b572e1074676ad9ae02fae9da92dbb5468c9383",
+                "reference": "7b572e1074676ad9ae02fae9da92dbb5468c9383",
                 "shasum": ""
             },
             "require": {
@@ -470,13 +520,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/settings/issues",
-                "source": "https://github.com/coleusapp/settings/tree/v1.0.58"
+                "source": "https://github.com/coleusapp/settings/tree/v1.0.59"
             },
-            "time": "2026-11-04T06:01:30+00:00"
+            "time": "2026-11-07T09:53:46+00:00"
         },
         {
             "name": "coleus/support",
-            "version": "v1.0.58",
+            "version": "v1.0.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/support.git",
@@ -523,13 +573,13 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/support/issues",
-                "source": "https://github.com/coleusapp/support/tree/v1.0.58"
+                "source": "https://github.com/coleusapp/support/tree/v1.0.59"
             },
             "time": "2026-11-07T07:36:55+00:00"
         },
         {
             "name": "coleus/table",
-            "version": "v1.0.58",
+            "version": "v1.0.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/coleusapp/table.git",
@@ -571,7 +621,7 @@
             ],
             "support": {
                 "issues": "https://github.com/coleusapp/table/issues",
-                "source": "https://github.com/coleusapp/table/tree/v1.0.58"
+                "source": "https://github.com/coleusapp/table/tree/v1.0.59"
             },
             "time": "2025-09-21T23:32:11+00:00"
         },

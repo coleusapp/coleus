@@ -12,6 +12,7 @@
         "php": "^8.4",
         "coleus/apps": "^1.0",
         "coleus/calendar": "^1.0",
+        "coleus/frame": "^1.0",
         "coleus/health": "^1.0",
         "coleus/music": "^1.0",
         "coleus/notes": "^1.0",
