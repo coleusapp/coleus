@@ -10,7 +10,7 @@ cd "$(dirname "$0")/.."
 
 TAGS=""
 
-for PACKAGE in calendar health music notes users; do
+for PACKAGE in calendar frame health music notes users; do
   TAGS="$TAGS --tag=$PACKAGE-config --tag=$PACKAGE-assets --tag=$PACKAGE-views"
 done
 
